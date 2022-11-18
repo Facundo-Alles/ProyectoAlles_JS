@@ -52,10 +52,10 @@ botonReserva.addEventListener("click", () => {
     let arrayUser = JSON.parse(localStorage.getItem("usuarios"));
     let itemDiv = "";
     arrayUser.forEach((usuario, indice) => {
-        itemDiv += `<div class="card w-50" id="usuario${indice}">
+        itemDiv += `<div class="card " id="usuario${indice}">
   <div class="card-body">
-    <h5 class="card-title">Perfecto ${usuario.nombre}</h5>
-    <p class="card-text">Su vuelo a ${usuario.paisDestino} a sido reservado para el ${usuario.fechaIda} hasta el ${usuario.fechaVuelta} desde el aeropuerto de ${usuario.paisOrigen}</p>
+    <h5 class="card-title">Felicidades ${usuario.nombre}</h5>
+    <p class="card-text">Su fecha de viaje a ${usuario.paisDestino} a sido establecida para el ${usuario.fechaIda} hasta el ${usuario.fechaVuelta} desde ${usuario.paisOrigen}</p>
     <button class="btn btn-primary">Cancelar reserva</button>
   </div>
 </div> `
